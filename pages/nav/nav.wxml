@@ -1,0 +1,108 @@
+<!--pages/nav/nav.wxml-->
+<scroll-view class="layout" bindscroll='layoutScroll' scroll-y="true" style="height: {{windowHeight}}px;">
+  <view class='search-section' bindtap="goSearch">
+    <view class='search-pancel'>
+      <input bindtap="goSearch" class='search-input' name="searchkeyword" placeholder="🔍 搜你所想 约你所爱"></input>
+    </view>
+  </view>
+
+  <swiper class='swiper' indicator-dots="false" autoplay="true" circular="true">
+    <block wx:for="{{adData}}" wx:key="kye" wx:for-item="item">
+      <swiper-item>
+        <image style='width:100%'  src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <scroll-view scroll-x="true" class="nav {{navFixed? 'positionFixed':''}}" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+    <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+      <view class="nav-item {{currentNavTab == idx ?'active':''}}" data-current="{{idx}}"  bindtap="switchNav">{{navItem}}</view>
+    </block>
+  </scroll-view>
+
+  <view class='storelist'>
+
+    
+      <view  class='store-item'>
+        <view class='store-item-lable'>超市</view>
+        <view class='store-pic'>
+          <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544186784224&di=b0ea477cd94b4b8adde50a4822727d10&imgtype=0&src=http%3A%2F%2Fupload.sortdoor.com%2F2017%2F1208%2F1512716217668.jpg'></image>
+        </view>
+        <view class='store-title'> 秋天不回来超市</view>
+        <view class='store-address'> 辽宁省大连市人民广场</view>
+        <view class='store-bottom'>
+          <view class='store-score'>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <text>5.0</text>
+          </view>
+          <view class='store-distance'>500km</view>
+          <view class='clearfix'></view>
+        </view>
+      </view>
+       <view  class='store-item'>
+        <view class='store-item-lable'>超市</view>
+        <view class='store-pic'>
+          <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544186784224&di=b0ea477cd94b4b8adde50a4822727d10&imgtype=0&src=http%3A%2F%2Fupload.sortdoor.com%2F2017%2F1208%2F1512716217668.jpg'></image>
+        </view>
+        <view class='store-title'> 秋天不回来超市</view>
+        <view class='store-address'> 辽宁省大连市人民广场</view>
+        <view class='store-bottom'>
+          <view class='store-score'>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <text>5.0</text>
+          </view>
+          <view class='store-distance'>500km</view>
+          <view class='clearfix'></view>
+        </view>
+      </view>
+       <view  class='store-item'>
+        <view class='store-item-lable'>超市</view>
+        <view class='store-pic'>
+          <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544186784224&di=b0ea477cd94b4b8adde50a4822727d10&imgtype=0&src=http%3A%2F%2Fupload.sortdoor.com%2F2017%2F1208%2F1512716217668.jpg'></image>
+        </view>
+        <view class='store-title'> 秋天不回来超市</view>
+        <view class='store-address'> 辽宁省大连市人民广场</view>
+        <view class='store-bottom'>
+          <view class='store-score'>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <text>5.0</text>
+          </view>
+          <view class='store-distance'>500km</view>
+          <view class='clearfix'></view>
+        </view>
+      </view>
+       <view  class='store-item'>
+        <view class='store-item-lable'>超市</view>
+        <view class='store-pic'>
+          <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544186784224&di=b0ea477cd94b4b8adde50a4822727d10&imgtype=0&src=http%3A%2F%2Fupload.sortdoor.com%2F2017%2F1208%2F1512716217668.jpg'></image>
+        </view>
+        <view class='store-title'> 秋天不回来超市</view>
+        <view class='store-address'> 辽宁省大连市人民广场</view>
+        <view class='store-bottom'>
+          <view class='store-score'>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <image src='../../resource/images/score.png'></image>
+            <text>5.0</text>
+          </view>
+          <view class='store-distance'>500km</view>
+          <view class='clearfix'></view>
+        </view>
+      </view>
+     
+   
+  </view>
+</scroll-view>

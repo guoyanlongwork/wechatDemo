@@ -1,0 +1,227 @@
+/* pages/nav/nav.wxss */
+/**index.wxss**/
+.layout
+{
+  background-color: #ECEEF2;
+}
+/** 搜索栏 */
+.search-section
+{
+  width: 100%;
+  background-color: #EDEDED;
+  padding: 6px 10px;
+
+}
+.search-pancel
+{
+  width: calc(100% - 20px);
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: #EDEDED;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.search-pancel input
+{
+  height: 30px;
+}
+
+/** 推荐栏 */
+.recommend
+{
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: white;
+  padding: 0 10px;
+ 
+}
+
+.recommend-1
+{
+  
+  width:calc(50% - 1px);
+  float: left;
+  border-right: 1px solid #E1E1E1;
+  padding:10px 0 5px;
+}
+.recommend .title
+{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+.recommend .des
+{
+  font-size: 12px;
+  color: #ccc;
+  line-height: 20px;
+}
+.recommend-1 image
+{
+  width: calc(100% - 10px);
+  height: 100px;
+}
+.recommend-2
+{
+   width: 50%;
+   height: 160px;
+    float: right;
+}
+.recommend-top
+{
+  width: 100%;
+  height: 79px;
+  border-bottom: 1px solid #E1E1E1;
+}
+.recommend-top-1
+{
+  width: calc(60% - 20px);
+  float: left;
+  padding: 10px;
+}
+.recommend-top-2
+{
+  width: calc(40% - 20px);
+  float: right;
+  padding: 10px;
+}
+.recommend-top-2 image
+{
+  width: 100%;
+}
+.recommend-bottom
+{
+  width: 100%;
+  height: 80px;
+}
+.recommend-bottom image
+{
+  width: 60%;
+  float: right;
+  margin-top: 10px;
+}
+.recommend-botton-1
+{
+  width: calc(50% - 21px);
+  float: left;
+  padding: 10px;
+  height: calc(100% - 20px);
+  border-right: 1px solid #ccc;
+}
+.recommend-botton-2
+{
+  width: calc(50% - 20px);
+  float: right;
+  padding: 10px;
+   height: 100%;
+}
+/** 导航栏 */
+.nav {
+    height: 80rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    background: white;
+    font-size: 16px;
+    white-space: nowrap;
+    z-index: 99;
+    border-bottom: 1px solid #E1E1E1;
+}
+.nav-item {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+.nav-item.active{
+    color: #BD171F;
+}
+.positionFixed{
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/** 列表 */
+.storelist
+{
+  padding-bottom: 120px;
+}
+.store-item
+{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  position: relative;
+  background-color: white;
+}
+.store-item-lable
+{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding:0 5px;
+  color: white;
+  font-size: 10px;
+  line-height: 20px;
+  background-color: rgba(0,0,0,.6)
+}
+.store-pic
+{
+  width: calc(100% - 20px);  
+}
+.store-pic image
+{
+  width: 100%;
+  height: 260rpx;
+}
+.store-title
+{
+  font-size: 16px;
+  font-weight: bold;
+  width: calc(100% - 20px);
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.store-address
+{
+  width: calc(100% - 20px);
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #ccc;
+}
+.store-bottom
+{
+  width: calc(100% - 20px);
+}
+.store-score
+{
+  float: left;
+  font-size: 12px;
+  color: #FFB31A;
+  
+}
+.store-score text
+{
+   vertical-align: top;
+   display: inline-block;
+   line-height: 20px;
+}
+.store-score image
+{
+  width: 20px;
+  height: 20px;
+}
+.store-distance
+{
+  float: right;
+  color: #ccc;
+  font-size: 12px;
+}
+
